@@ -3,6 +3,7 @@ import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
 import Cart from "./Components/Cart/Cart";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -11,7 +12,9 @@ function App() {
   });
   console.log(cart);
   return (
+
     <BrowserRouter>
+      <ToastContainer />
       <Header />
       <Routes>
         <Route path="/" element={<Home cart={cart} />} />

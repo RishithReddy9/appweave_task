@@ -1,4 +1,6 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 function CardLayout({ item, cart }) {
@@ -6,12 +8,14 @@ function CardLayout({ item, cart }) {
     const handleAddToCart = () => {
         let found = cart.filter((product) => item.key === product.key);
         if (found[0] === undefined) {
-            cart.push(item)
-            localStorage.setItem(item.key, 1)
+            cart.push(item);
+            localStorage.setItem(item.key, 1);
+            toast.success(`${item.name} added to cart`);
         } else {
             let quantity = localStorage.getItem(item.key);
             quantity = parseInt(quantity) + 1;
-            localStorage.setItem(item.key, quantity)
+            localStorage.setItem(item.key, quantity);
+            toast.success(`${item.name} added to cart`);
         }
         localStorage.setItem('cart', JSON.stringify(cart));
     }

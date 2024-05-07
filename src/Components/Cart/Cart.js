@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import DeleteIcon from '@mui/icons-material/Delete';
+import { toast } from 'react-toastify';
 
 function Cart({ cart, setCart }) {
 
@@ -28,12 +29,17 @@ function Cart({ cart, setCart }) {
                             if (newTotal > total) {
                                 setTotal(newTotal);
                             }
+
                             const handleAddQuantity = () => {
                                 let currentQuantity = localStorage.getItem(shirt.key);
                                 currentQuantity = parseInt(currentQuantity) + 1;
-                                localStorage.setItem(shirt.key, currentQuantity)
-                                quantity = localStorage.getItem(shirt.key)
-                                setTotal(total + shirt.price)
+                                if (currentQuantity > shirt.maxQuantity) {
+                                    toast.error('Maximum Quantity Reached')
+                                } else {
+                                    localStorage.setItem(shirt.key, currentQuantity)
+                                    quantity = localStorage.getItem(shirt.key)
+                                    setTotal(total + shirt.price)
+                                }
                             }
 
                             const handleSubQuantity = () => {
