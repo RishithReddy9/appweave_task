@@ -1,0 +1,64 @@
+{
+    "shirts": [
+        {
+            "key": "1",
+            "name": "Shirt",
+            "color": "Blue",
+            "size": "M",
+            "gender": "Male",
+            "price": 25.0,
+            "image_url": "https://i5.walmartimages.com/asr/1cbf5a5f-d762-4c7c-8fc2-5abd253c8959.33868c787b85222f65a5bd14a865d554.jpeg",
+            "type": "shirt"
+        },
+        {
+            "key": "2",
+            "name": "Allen Solly",
+            "color": "Green",
+            "size": "M",
+            "gender": "Female",
+            "price": 25.0,
+            "image_url": "https://i5.walmartimages.com/asr/a6923d0f-db51-43e6-b90c-7f9b36522312_1.c9814cf50ea9789354132cef44e45543.jpeg",
+            "type": "shirt"
+        },
+        {
+            "key": "3",
+            "name": "Shirt",
+            "color": "Green",
+            "size": "M",
+            "gender": "Male",
+            "price": 25.0,
+            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+            "type": "shirt"
+        },
+        {
+            "key": "4",
+            "name": "Shirt",
+            "color": "Green",
+            "size": "M",
+            "gender": "Male",
+            "price": 25.0,
+            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+            "type": "shirt"
+        },
+        {
+            "key": "5",
+            "name": "Shirt",
+            "color": "Green",
+            "size": "M",
+            "gender": "Male",
+            "price": 25.0,
+            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+            "type": "shirt"
+        },
+        {
+            "key": "6",
+            "name": "Shirt",
+            "color": "Green",
+            "size": "M",
+            "gender": "Male",
+            "price": 25.0,
+            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+            "type": "shirt"
+        }
+    ]
+}
