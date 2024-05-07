@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import DeleteIcon from '@mui/icons-material/Delete';
 
 function Cart({ cart, setCart }) {
 
     const handleDelete = (shirt) => {
         cart = cart.filter((item) => {
-            return item.key != shirt.key;
+            return item.key !== shirt.key;
         })
         localStorage.removeItem(shirt.key)
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -39,7 +39,7 @@ function Cart({ cart, setCart }) {
                             const handleSubQuantity = () => {
                                 let currentQuantity = localStorage.getItem(shirt.key);
                                 currentQuantity = parseInt(currentQuantity) - 1;
-                                if (currentQuantity == 0) {
+                                if (currentQuantity === 0) {
 
                                 } else {
                                     localStorage.setItem(shirt.key, currentQuantity)
@@ -51,7 +51,7 @@ function Cart({ cart, setCart }) {
                             return (
                                 <div className='flex p-3 gap-6 justify-items-start items-center '>
                                     <div className='mr-3'>
-                                        <img className="w-28 h-36 hover:scale-105 transition-scale duration-300" src={shirt.image_url} />
+                                        <img className="w-28 h-36 hover:scale-105 transition-scale duration-300" src={shirt.image_url} alt='shirt' />
                                     </div>
                                     <div className='mr-8 min-w-24'>
                                         <h1>{shirt.name}</h1>

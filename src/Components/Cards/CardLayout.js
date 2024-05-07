@@ -4,8 +4,8 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 function CardLayout({ item, cart }) {
 
     const handleAddToCart = () => {
-        let found = cart.filter((product) => item.key == product.key);
-        if (found[0] == undefined) {
+        let found = cart.filter((product) => item.key === product.key);
+        if (found[0] === undefined) {
             cart.push(item)
             localStorage.setItem(item.key, 1)
         } else {
