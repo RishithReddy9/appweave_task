@@ -80,7 +80,9 @@ function Cart({ cart, setCart }) {
                     </div>
                 </div >
             ) : (
-                <div></div>
+                <div className='flex justify-center min-h-96 items-center text-4xl font-bold'>
+                    Your Cart is Empty...
+                </div>
             )
             }
         </>

@@ -13,32 +13,32 @@
         {
             "key": "2",
             "name": "Allen Solly",
-            "color": "Green",
+            "color": "Blue",
             "size": "M",
-            "gender": "Female",
-            "price": 25.0,
+            "gender": "Male",
+            "price": 250.0,
             "image_url": "https://i5.walmartimages.com/asr/a6923d0f-db51-43e6-b90c-7f9b36522312_1.c9814cf50ea9789354132cef44e45543.jpeg",
             "type": "shirt"
         },
         {
             "key": "3",
-            "name": "Shirt",
-            "color": "Green",
-            "size": "M",
-            "gender": "Male",
-            "price": 25.0,
-            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
-            "type": "shirt"
+            "name": "Basic Tee",
+            "color": "White",
+            "size": "S",
+            "gender": "Female",
+            "price": 225.0,
+            "image_url": "https://imgix.bustle.com/uploads/image/2019/6/14/90073241-e78c-4b78-b285-341c6581363d-original.jpg",
+            "type": "basic"
         },
         {
             "key": "4",
-            "name": "Shirt",
+            "name": "Hoodie",
             "color": "Green",
-            "size": "M",
+            "size": "L",
             "gender": "Male",
-            "price": 25.0,
-            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
-            "type": "shirt"
+            "price": 425.0,
+            "image_url": "https://th.bing.com/th/id/OIP.3JdSv-mpP7SGQglxfgHBcAHaHa?rs=1&pid=ImgDetMain",
+            "type": "hoodie"
         },
         {
             "key": "5",
@@ -52,13 +52,13 @@
         },
         {
             "key": "6",
-            "name": "Shirt",
-            "color": "Green",
+            "name": "Basic Tee Shirt",
+            "color": "White",
             "size": "M",
             "gender": "Male",
-            "price": 25.0,
-            "image_url": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
-            "type": "shirt"
+            "price": 275.0,
+            "image_url": "https://th.bing.com/th/id/OIP.7xQrGfHeGi95q3Uvoa6mhgHaJQ?rs=1&pid=ImgDetMain",
+            "type": "basic"
         }
     ]
 }
